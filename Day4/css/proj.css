@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    background-color: #edf2fc;
+}
+
+.car {
+    margin: 20px;
+}
+.card-img, .card-img-top {
+    background-color: hsl(0, 0%, 90%);
+
+}
+.myh {
+    height: 50%;
+}
+.nav-link {
+    font-family: serif;
+    color: #555;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #ff4321;
+}
+a.nav-link.active {
+    color: #ff4321;
+}
+.mym {
+    margin: 1.5% 0;
+}
+.btn {
+    margin-top: 10px;
+}
+/* .btn-block {
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: linear-gradient(to right, #ff00cc, #333399);
+} */
+.h1sec {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-family: emoji;
+    font-size: 200%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 4px 16px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #ff2ed5, #2e2efa);
+}
+
+.toltipp {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Tooltip text */
+  .toltipp .toltipptext {
+    visibility: hidden;
+    width: 240px;
+    font-size: 19px;
+    bottom: 106%;
+    left: -90px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    transition: bottom 1s;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 2;
+  }
+  .toltipp .toltipptext::after{
+  content: "";
+  position: relative;
+  bottom: -37px;
+  left: -45%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .toltipp:hover .toltipptext {
+    visibility: visible;
+  }
+
+
+
+
+@media screen and (max-width:700px) {
+    .h1sec {
+        margin-bottom: 4%;
+    }
+}

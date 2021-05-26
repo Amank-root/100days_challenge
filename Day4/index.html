@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="image"></div>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/icons8-book-64.png" alt="" width="70" class="d-inline-block align-text-top">
+                    <span style="vertical-align: -18px;">My Data</span>
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Projects.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Subject.html">Subject</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="img-box up">
+            <img src="img/pattern.png" class="back-img up" />
+            <img id="randomImage" class="main-img" />
+        </div>
+        <div class="info">
+            <h1>My <span>Assingment</span> Data</h1>
+            <p>All the notes, Assingment, Projects, Activities will be Uploaded here for reviewing my consitence and progress.<br></p>
+            <a href="./Projects.html">Learn More</a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/amankushwaha_28" target="_blank"><img
+                    src="https://img.icons8.com/nolan/50/instagram-new.png" /></a>
+            <a href="#" class="toolltip">
+                <span class="toolltiptext">Unable On This Platform!</span>
+                <img src="https://img.icons8.com/nolan/50/facebook-circled.png" /></a>
+            <a href="https://github.com/Amank-root">
+                <img src="https://img.icons8.com/nolan/50/github.png" />
+            </a>
+        </div>
+    </div>
+    <script>
+        function getRandomImage() {
+            var images = ['img/tablet.png', 'img/drawing.png', 'img/new.png'];
+            var image = images[Math.floor(Math.random() * images.length)];
+
+            return image;
+        }
+
+        function displayRandomImage() {
+            var htmlImage = document.getElementById("randomImage");
+            htmlImage.src = getRandomImage();
+        }
+        displayRandomImage();
+
+
+
+
+
+    </script>
+</body>
+
+</html>
