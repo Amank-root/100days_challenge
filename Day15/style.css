@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    height: 5em;
+    grid-gap: 10px;
+}
+.one {
+    display: grid;
+    grid-column: 1 / span 3;
+    width: 100%;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.2em;
+    font-size: 1.6em;
+    border-bottom: 0.1em solid blue;
+
+}
+.two {
+    display: grid;
+    grid-column: 1 / span 3;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.two ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.two li {
+    /* width: 100%; */
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 1.6em;
+    padding-bottom: 0.8em;
+    padding-top: 0.8em;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.two li a:hover {
+    color: #ff4321;
+    /* color: #24ff92; */
+}
+.two li a {
+    color: #24ff92;
+    transition: all 450ms ease-in;
+}
+.two:hover{
+    background-color: black;
+    transition: all 750ms linear;
+}
+.card.three {
+    /* grid-template-rows: 101px 101px; */
+    width: 28em;
+    height: 30em;
+    align-items: center;
+    border: 2px solid #1eaaff;
+    border-bottom: 5px solid #1eaaff;
+    border-radius: 20px;
+    justify-content: center;
+    display: grid;
+    margin: 0 auto;
+}
+.card.three:hover {
+    background: #1eaaff;
+    transition: all 750ms linear;
+}
+.three img {
+    width: 26em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.info {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
