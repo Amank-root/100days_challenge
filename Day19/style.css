@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.sec{
+    background-color: rgb(28, 28, 28);
+    color: green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec2{
+    background-color: rgb(163, 75, 75);
+    color: black;
+}
+.sec3{
+    background-color: rgb(62, 180, 209);
+    color: blue;
+}
+
+h1 {
+    /* font-size: 15rem; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.circle {
+    width: 72em;
+    margin-bottom: -16.7%;
+    height: 32em;
+    overflow: hidden;
+    border-radius: 50%;
+    border-top: 256px solid #1fffb0;
+}
+.c {
+    width: 72rem;
+    bottom: 0%;
+    display: flex;
+    color: white;
+    position: absolute;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.c h1 {
+    font-size: 3rem;
+}
+.c p {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(./background.jpg) center center no-repeat;
+    background-size: cover;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+}
+div{
+    flex: none;
+    scroll-snap-align: start;
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(./background.jpg) center center no-repeat;
+    background-size: cover;
+}
+.bg2 {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(./fo.jfif) center center no-repeat;
+    background-size: cover;
+}
+.bg3 {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(./ni.jpg) center center no-repeat;
+    background-size: cover;
+} */
