@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="nav">
+            <img src="./logo.png" alt="">
+            <ul>
+                <li class="hide"><a href="#">Home</a></li>
+                <li class="hide"><a href="#">About</a></li>
+                <li class="hide"><a href="#">Service</a></li>
+                <li class="hide"><a href="#">Contact</a></li>
+                <li class=" dropdown show" onclick="ny()">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">&#9776;</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/">Home</a>
+                        <a class="dropdown-item" href="/">About</a>
+                        <a class="dropdown-item" href="/">Service</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cont">
+            <h1>This Is A Heading!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,<br> minima. Laudantium maiores est
+                voluptatibus natus itaque assumenda cum praesentium aut eveniet <br> excepturi exercitationem,
+                doloremque,
+                delectus unde iure, incidunt aperiam. Rerum.</p>
+            <img src="./cont.jpeg" alt="">
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/amankushwaha_28" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="toolltip">
+                <span class="toolltiptext">Unable On This Platform!</span>
+                <i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/Amank-root">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        function ny() {
+            $('.dropdown-toggle').dropdown('toggle')
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</body>
+
+</html>
