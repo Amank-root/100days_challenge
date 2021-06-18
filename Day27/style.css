@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --set-s: url('./animals-1782013_1280.png') no-repeat;
+    --left: flex-start;
+}
+body{
+    overflow: hidden;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(h.jpg);
+    background-position: center;
+    background-size: cover;
+}
+section h1 {
+    display: flex;
+    justify-content: var(--left);
+    width: 100%;
+    height: 25%;
+    font-size: 4rem;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+}
+section h1 a {
+    color: white;
+    cursor: pointer;
+    text-decoration-color: aquamarine;
+}
+.animal {
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+}
+.img {
+    position: relative;
+    background: var(--set-s);
+    background-size: contain;
+    background-position: left;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+@media only screen and (max-width: 700px) {
+    :root {
+        --left: center;
+        --set-s: url('./animals-1782013_1280.png') center no-repeat;
+    }
+}
