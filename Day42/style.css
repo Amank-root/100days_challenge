@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --st: center;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #ff0000, #ffb631, #d7d71a);
+    background: url(./wall15.jpg) center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.cont {
+    width: 30rem;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    flex-direction: row;
+    align-content: var(--st);
+    justify-content: var(--st);
+    align-items: center;
+}
+button {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 1rem solid;
+    border-color: teal;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+    :root {
+        --st: flex-start;
+    }
+}
