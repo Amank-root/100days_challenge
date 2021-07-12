@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --nav-iw: 25rem;
+    --nav-id: row;
+}
+.hero {
+    /* width: 100%;
+    height: 100vh; */
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: aliceblue;
+    background: url(./b2.gif) center center no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.nav {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 4px solid;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    display: flex;
+    width: var(--nav-iw);
+    height: 100%;
+    font-size: 2rem;
+}
+.nav-item ul:nth-child(2) {
+    display: flex;
+    font-size: 70%;
+    width: 100%;
+    flex-direction: var(--nav-id);
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item ul li a {
+    color: black;
+    text-decoration: none;
+}
+.show {
+    display: none;
+}
+
+.cont {
+    margin: 1rem 1rem 0;
+    height: 88%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    animation: conts 1s linear 150ms;
+}
+
+@keyframes txts {
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes imgs {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.txt {
+    width: 100%;
+    font-size: 1.3rem;
+    color: black;
+    line-height: 1.3;
+    animation: txts 1s linear 150ms;
+}
+.igm {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: imgs 1s linear 150ms;
+}
+.igm img {
+    width: 90%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 700px){
+    .hide {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .cont {
+        margin: 2rem 1rem 0;
+        flex-direction: column-reverse;
+    }
+    .igm img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    :root {
+        --nav-iw: 100%;
+        --nav-id: column;
+    }
+    .nav-item {
+        flex-direction: column;
+    }
+    .nav h1{
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    .show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0 1rem 0;
+        flex-wrap: wrap;
+    }
+    .show i {
+        border: 2px solid white;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        height: 3rem;
+    }
+    .hide {
+        display: flex;
+    }
+    .cont {
+        margin: 0rem 1rem 0;
+        flex-direction: column-reverse;
+    }
+    .txt {
+        width: 100%;
+        font-size: 1.3rem;
+        backdrop-filter: blur(70px);
+        color: white;
+        text-align: center;
+        border-radius: 60px 0 60px 0;
+        line-height: 1.3;
+    }
+    .nav-item ul li a {
+        color: white;
+    }
+}
