@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: rgb(19, 240, 210);
+    /* animation: lod 1s linear; */
+    position: absolute;
+}
+.bavk {
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    background: rgb(255, 0, 0);
+    animation: main 1s linear 2.5s;
+}
+.loading {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.part {
+    animation: dol 3.7s linear;
+    border-bottom: 5px solid white;
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+}
+@keyframes main {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    
+}
+@keyframes dol {
+    0% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+        opacity: 0;
+    }
+    
+}
