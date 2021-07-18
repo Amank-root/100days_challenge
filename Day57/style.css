@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.head {
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background: url(./14_Isometric\ Teamwork.jpg); */
+}
+.nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+.nav-it {
+    display: flex;
+    width: 25rem;
+    align-items: center;
+}
+.nav-it ul:nth-child(1) {
+    list-style-type: none;
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+.nav h1 a  {
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.nav-it ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 14%;
+    border-radius: 64px;
+    background: linear-gradient(43deg, #b57171, #3c2b2b);
+    box-shadow: 9px 13px 41px #474141, -20px 20px 41px #695f5f;
+}
+.nav-it ul li a:hover {
+
+    background: linear-gradient(43deg, #d38312, #a83279);
+    box-shadow: 9px 13px 41px #d38312, -20px 20px 41px #695f5f;
+}
+.cont {
+    width: 100%;
+    height: calc(100vh - 20%);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
+    align-content: center;
+}
+.show {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .cont {
+        flex-direction: column-reverse;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    .nav-it {
+        width: 2rem;
+    }
+}
