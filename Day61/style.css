@@ -1,0 +1,225 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.hero {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.head {
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background: url(./14_Isometric\ Teamwork.jpg); */
+}
+.nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+.nav-it {
+    display: flex;
+    width: 25rem;
+    align-items: center;
+}
+.nav-it ul:nth-child(1) {
+    list-style-type: none;
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+.nav h1 a  {
+    color: white;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.nav-it ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 14%;
+    border-radius: 64px;
+    /* background: linear-gradient(43deg, #b57171, #3c2b2b);
+    box-shadow: 9px 13px 41px #474141, -20px 20px 41px #695f5f; */
+        background: linear-gradient(45deg, #40a4ca, #d21888);
+        box-shadow: 9px 13px 41px #40a4ca, -20px 20px 41px #d21888;
+}
+.nav-it ul li a:hover {
+
+    /* background: linear-gradient(45deg, #d38312, #a83279);
+    box-shadow: 9px 13px 41px #d38312, -20px 20px 41px #695f5f; */
+
+    box-shadow: 9px 13px 41px #6512d3, -20px 20px 41px #00dcff;
+    background: linear-gradient( 45deg, #6512d3, #00dcff);
+}
+.cont {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
+    align-content: center;
+}
+.show {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .cont {
+        flex-direction: column-reverse;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    .nav-it {
+        width: 2rem;
+    }
+}
+
+/* Some Service Contant */
+
+.service {
+    background: linear-gradient(45deg, pink, blue);
+    /* background: linear-gradient(45deg, pink, #1f1fcc); */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.scont {
+    width: 100%;
+    display: flex;
+    padding: 2% 2% 0;
+    z-index: 999;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.sside {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    overflow: hidden;
+}
+.sside .upl {
+    background-color: darkblue;
+    width: 15%;
+    height: 30%;
+    border-bottom-right-radius: 100%;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+.downr {
+    background: darkblue;
+    width: 25%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    border-top-left-radius: 100%;
+}
+
+.card {
+    height: 90vh;
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+}
+
+
+.inbox {
+    max-width: 100%;
+    height: 42vh;
+    display: flex;
+    background: transparent;
+    box-shadow: -20px 20px 20px 0px black;
+    border: 2px solid white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inimg {
+    width: 28%;
+    height: 12rem;
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+
+
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+@media only screen and (max-width: 1000px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .slideshow-container {
+        max-width: 70%;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .slideshow-container {
+        max-width: 100%;
+    }
+    
+}
