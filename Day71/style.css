@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+.hero {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4em 1em;
+}
+.nav-item {
+    display: flex;
+    width: auto;
+}
+.nav-item ul {
+    display: flex;
+    width: auto;
+    list-style: none;
+    justify-content: space-between;
+}
+.nav-item ul li {
+    padding: 0 1em;
+}
